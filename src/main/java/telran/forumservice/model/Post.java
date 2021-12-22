@@ -3,6 +3,7 @@ package telran.forumservice.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -13,6 +14,7 @@ import java.util.Set;
 @EqualsAndHashCode(of = {"id"})
 @Builder
 @Getter
+@Document(collection = "posts")
 public class Post {
     @Id
     String id;

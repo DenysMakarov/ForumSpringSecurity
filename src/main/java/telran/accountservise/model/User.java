@@ -13,7 +13,7 @@ import java.util.Set;
 @Getter
 @Setter
 @EqualsAndHashCode(of = {"login"})
-//@Document(collection = "users")
+@Document(collection = "users")
 public class User {
     @Id
     String login;
